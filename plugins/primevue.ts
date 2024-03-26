@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-dupe-keys */
+// @ts-nocheck
 import PrimeVue from "primevue/config";
 // import Tailwind from "primevue/passthrough/tailwind";
 
@@ -273,7 +274,6 @@ const DevhousePT = {
   },
   inputtext: {
     root: ({ props, context, parent }) => {
-      var _a;
       return {
         class: [
           // Font
@@ -798,7 +798,6 @@ const DevhousePT = {
     }),
     input: {
       root: ({ parent, context }) => {
-        var _a, _b, _c;
         return {
           class: [
             // Display
@@ -876,7 +875,7 @@ const DevhousePT = {
         };
       },
     },
-    buttongroup: ({ props }) => ({
+    buttongroup: () => ({
       class: [
         // Flex
         "flex",
